@@ -1,0 +1,29 @@
+.nav{
+    top:0 ;
+    width: 100%;
+    position: fixed;
+    background-color: #009244c7;
+    z-index: 9999;
+    height: 10vh;
+    
+}
+.nav .cont{
+    padding-top: 5px;
+    display: flex;
+}
+.nav img{
+    width: 4%;
+    margin-left: 10%;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 30%;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
