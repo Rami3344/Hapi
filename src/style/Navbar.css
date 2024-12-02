@@ -4,26 +4,27 @@
     position: fixed;
     background-color: #009244c7;
     z-index: 9999;
-    height: 10vh;
-    
-}
-.nav .cont{
-    padding-top: 5px;
-    display: flex;
+    display: block;
+    height: 8vh;
+    margin: auto;
 }
 .nav img{
-    width: 4%;
-    margin-left: 10%;
+    width: 60px;
+    height: 60px;
+    margin-left:9%;
+    margin-top: 8px;
 }
-.nav-list{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 30%;
-    list-style: none;
-}
-
-.nav-list a{
-    text-decoration: none;
+.nav a{
     color: white;
+    font-size: 1.2em;
+}
+.nav .cont{
+    margin-left: 25%;
+    color: white;
+    text-align: center;
+}
+.nav .navbar-toggler{
+    display: block;
+    margin-left: 100%;
+    border: 2px solid black;
 }

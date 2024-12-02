@@ -1,0 +1,42 @@
+@media only screen and (max-width: 991px) {
+    .nav{
+        top:0 ;
+        width: 100%;
+        position: fixed;
+        background-color: #009244c7;
+        z-index: 9999;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .nav img{
+        width: 60px;
+        height: 60px;
+        margin-left:9%;
+        margin-top: 6px;
+    }
+    .nav a{
+        color: white;
+        
+    }
+    .nav .cont{
+        margin-left: 0%;
+        color: white;
+        text-align: center;
+    }
+    .nav .cont{
+        width: 70%;
+        color: white;
+        text-align: center;
+    }
+    .nav .navbar-toggler{
+        display: block;
+        margin-left: 100%;
+        border: 2px solid black;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .nav .cont{
+        width: 60%;
+    }
+}

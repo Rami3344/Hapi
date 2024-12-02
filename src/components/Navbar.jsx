@@ -1,22 +1,31 @@
 import React from 'react'
 import "../style/Navbar.css"
+import "../style/responsive.css"
 import logo from "../assets/Logo.png"
-function Navbar() {
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+function NavbarSec() {
   return (
     <div className='nav'>
-      
-      <div className='cont'>
-        <img src={logo}/>
-      <ul className='nav-list'>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#buy">BUY $HAPI</a></li>
-        <li><a href="#road">ROADMAP</a></li>
-        <li><a href="#white">WHITEPAPER</a></li>
-      </ul>
-      </div>
-    </div>
+      <img src={logo}/>
+      <Navbar expand="lg" className="cont">
+        <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"  className='basic-navbar-nav'/>
+        <Navbar.Collapse  id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">HOME</Nav.Link>
+            <Nav.Link href="#about">ABOUT</Nav.Link>
+            <Nav.Link href="#">BUY $HAPI</Nav.Link>
+            <Nav.Link href="#road">ROADMAP</Nav.Link>
+            <Nav.Link href="#white">WHITEPAPER</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  </div>
   )
 }
 
-export default Navbar
+export default NavbarSec
